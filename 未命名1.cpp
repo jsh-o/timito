@@ -1860,3 +1860,87 @@ void swap(int x,int y){
 //}
 
 
+//int main()
+//{
+//	char *str1="hello",*str2;
+//	int i=0;
+//	str2=str1;
+//	puts(str2);
+//	str1="world";
+//	if(str1!=str2)
+//	printf("str1<>str2\n");
+//	while(*(str1+i))
+//	printf("%c",str1[i++]);
+//	return 0;
+//}
+
+//int main()
+//{
+//	char str[]="a1a2a3a4a";
+//	int i=0;
+//	for(i=0;i<9;i++)
+//	if(*(str+i)=='a')
+//	str[i]='b';
+//	puts(str);
+//	return 0;
+//}
+
+
+//指针-指针=两个指针之间有都少个字符
+//int main()
+//{
+//	char *str1,*str2;
+//	str1="abcdefghijklmnopqrstuvwxyz";
+//	for(str2=str1;str2<str1+26;str2++)
+//	{
+//		printf("%c",*str2);
+//		if((str2-str1+1)%10==0)						//str2-str1计算str2与str1之间有都少个字符 
+//		printf("\n");
+//	}
+//	return 0;
+// } 
+
+//int main()
+//{
+//	char a[25]="c language programming!",*str=a;
+//	str=a+2;
+//	puts(str);
+//	str=str+9;
+//	puts(str);
+//	printf("%c",*str);
+//	return 0;
+//}
+
+//二级指针
+//int main()
+//{
+//	int a,*pa=&a,**ppa=&pa;
+//	**ppa=10;
+//	printf("**ppa=%d,*pa=%d,a=%d\n",**ppa,*pa,a);
+// } 
+
+
+//int main()
+//{
+//	char *s[]={"VB","C","C++","Java","C#"};
+//	char **q=s;
+//	int k;
+//	for(k=0;k<5;k++)
+//	printf("%s\n",*(q+k));				//q等价于s,指针数组名本质上就是一个二级指针 
+//	return 0;
+//}
+
+
+//main函数的参数
+/*		main(int argc,char *argv[])
+	其中,argc和argv为main()函数的形参,argc表示main()所接受的参数个数；字符指针数组*argv[]指向命令行中的程序名和参数字符串,
+	main()函数的参数需要在命令行中给出 
+	*/
+	
+//int main(int argc,char *argv[])
+//{
+//	int i;
+//	printf("argument number is %d \n",argc);
+//	for(i=0;i<argc;i++)
+//	printf("%s\n",argv[i]);
+//}
